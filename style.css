@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Questrial&display=swap');
+
+body {
+  background-color: #34495E;
+  font-family: 'Questrial', sans-serif;
+  font-size: clamp(16px, 5vw, 32px);
+}
+
+h1 {
+  margin-top: 0;
+  color: #1C2833;
+  text-shadow: 2px 2px rgb(38, 50, 61);
+  display: inline;
+}
+
+form {
+  text-align: center;
+}
+
+input[type=text] {
+  width: clamp(200px, 75vw, 500px);
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(38, 50, 61);
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: rgb(128, 140, 151);
+  filter: opacity(0.6);
+}
+
+input[type=text]:focus {
+  border: none;
+  outline: 2px solid rgb(98, 110, 121);
+  border-radius: 4px;
+  background-color: rgb(43, 55, 66);
+  filter: opacity(0.9);
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: 800px;
+  max-height: 800px;
+  object-fit: cover;
+  margin: auto;
+  border: none;
+  border-radius: 5px;
+}
+
+img[src*="glass.png"] {
+  border: none;
+  animation: spin 3s infinite ease-in-out;
+}
+
+#glass {
+  width: min(90vw, 90vh)
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+.correct {
+  animation: correct 1s;
+}
+
+.fade {
+  animation: fade 3s;
+}
+
+form {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+h2 {
+  position: fixed;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(38, 50, 61);
+  padding: 3px 5px;
+  border-width: 20px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  color: rgb(128, 140, 151);
+  filter: opacity(1);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shake {
+  from {
+    transform: translateX(0px);
+    color: red;
+  }
+  33% {
+    transform: translateX(10px);
+  }
+  66% {
+    transform: translateX(-10px);
+  }
+  to {
+    transform: translateX(0px);
+    color: rgb(128, 140, 151);
+  }
+}
+
+@keyframes correct {
+  from {
+    color: rgb(0, 255, 0);
+  }
+  to {
+    color: rgb(128, 140, 151);
+  }
+}
+
+@keyframes fade {
+  from {
+    filter: opacity(1);
+  }
+  to {
+    filter: opacity(0);
+  }
+}

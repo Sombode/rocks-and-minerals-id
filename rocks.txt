@@ -1,0 +1,44 @@
+Andesite
+Basalt
+Diorite
+Gabbro
+Granite
+Obsidian
+Pegmatite
+Peridotite
+Pumice
+Rhyolite
+Scoria
+Syenite
+Tuff
+Banded iron
+Bauxite
+Breccia
+Chert
+Conglomerate
+Diatomite
+Dolostone
+Halite
+Gypsum
+Shale
+Anthracite
+Bituminous
+Lignite
+Chalk
+Coquina
+Fossil limestone
+Oolitic limestone
+Travertine
+Arkose
+Greywacke
+Quartz sandstone
+Amphibolite
+Gneiss
+Marble
+Phyllite
+Quartzite
+Garnet schist
+Mica schist
+Soapstone
+Serpentinite
+Slate
