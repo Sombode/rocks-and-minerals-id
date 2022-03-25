@@ -20,6 +20,7 @@ form {
 input[type=text] {
   width: clamp(200px, 75vw, 500px);
   text-align: center;
+  padding: 3px 10px;
   border: none;
   border-radius: 4px;
   background-color: rgb(38, 50, 61);
@@ -94,7 +95,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
   color: rgb(128, 140, 151);
-  filter: opacity(1);
+  filter: opacity(0);
 }
 
 @keyframes spin {
