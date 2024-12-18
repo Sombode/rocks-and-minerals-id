@@ -15,6 +15,8 @@ for(iii in array) {
 //requirejs(['fs'],function($,canvas,sub) {
 //    console.log("hello?");
 //});
+
+//stopped at augite
 let guessForm = document.getElementById("guess");
 let guessBox = document.getElementById("guessbox");
 let image = document.getElementById("image");
@@ -70,7 +72,7 @@ function newImage() {
     title.innerHTML = "<u>Mineral</u> Spot ID Practice";
     image.style.display = "none";
     image.style.border = "none";
-    fetch("pictures/minerals/" + master[answer].toLowerCase().replace(" ", "_") + ".txt").then(response => response.text()).then(data => {
+    fetch("newpictures/minerals/" + master[answer].toLowerCase().replace(" ", "_") + ".txt").then(response => response.text()).then(data => {
       try {
       if(data.split(/\r?\n/).length <= 1) {
         throw "No good images!";
@@ -88,7 +90,7 @@ function newImage() {
     title.innerHTML = "<u>Rock</u> Spot ID Practice";
     image.style.display = "none";
     image.style.border = "none";
-    fetch("pictures/rocks/" + master[answer].toLowerCase().replace(" ", "_") + ".txt").then(response => response.text()).then(data => {
+    fetch("newpictures/rocks/" + master[answer].toLowerCase().replace(" ", "_") + ".txt").then(response => response.text()).then(data => {
       try {
       if(data.split(/\r?\n/).length <= 1) {
         throw "No good images!";
